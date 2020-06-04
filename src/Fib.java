@@ -3,6 +3,7 @@ import parcs.*;
 public class Fib implements AM
 {
     public void run(AMInfo info){
+    int counter=0;
         long n,r1,r2,r;
         n = info.parent.readLong();
 
