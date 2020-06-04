@@ -23,6 +23,30 @@ public class Fib implements AM{
             //if ((r1==0)||(r2==0)) System.out.println("n="+n+" r1="+r1+" r2="+r2);
             r=r1+r2;
         }
-        info.parent.write(r);
+             boolean prime[] = new boolean[(int)n+1]; 
+        for(int i=0;i<n;i++) 
+            prime[i] = true; 
+          
+        for(int p = 2; p*p <=n; p++) 
+        { 
+            // If prime[p] is not changed, then it is a prime 
+            if(prime[p] == true) 
+            { 
+                // Update all multiples of p 
+                for(int i = p*2; i <= n; i += p) 
+                    prime[i] = false; 
+            } 
+        } 
+          
+        // Print all prime numbers 
+        for(int i = 2; i <= n; i++) 
+        { 
+            if(prime[i] == true) 
+                counter++;
+        } 
+            
+        }
+        info.parent.write(counter);
+     
     }
 }
