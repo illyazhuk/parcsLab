@@ -32,10 +32,10 @@ public class Fibon implements AM {
       System.out.println("Result found.");
 
       //System.out.println("F"+n+"="+r);
-      try{
-          PrintWriter out = new PrintWriter(new FileWriter(info.curtask.addPath("Fibon.res")));
-          out.println(r);
-          out.close();
-      } catch (IOException e) {e.printStackTrace(); return;}
+      //try{
+         // PrintWriter out = new PrintWriter(new FileWriter(info.curtask.addPath("Fibon.res")));
+         // out.println(r);
+         // out.close();
+      //} catch (IOException e) {e.printStackTrace(); return;}
     }
 }
