@@ -8,6 +8,15 @@ public class Fibon implements AM {
         curtask.addJarFile("Fibon.jar");
         (new Fibon()).run(new AMInfo(curtask, (channel)null));
         curtask.end();
+        
+        task curtask2 = new task();
+        curtask2.addJarFile("Fibon.jar");
+        
+        int n = 30; 
+        (new Fibon()).run(new AMInfo(curtask,(channel)null));
+        curtask2.end();
+       
+    
     }
 
     public void run(AMInfo info) {
@@ -27,15 +36,19 @@ public class Fibon implements AM {
       p1.execute("Fib");
       c1.write(n);
 
+            
       System.out.println("Waiting for result...");
       long r = c1.readLong();
-      System.out.println("Result found.");
-
+      System.out.println("Result found:");
+       System.out.println(r);
       //System.out.println("F"+n+"="+r);
-      try{
-          PrintWriter out = new PrintWriter(new FileWriter(info.curtask.addPath("Fibon.res")));
-          out.println(r);
-          out.close();
-      } catch (IOException e) {e.printStackTrace(); return;}
+     // try{
+        //  PrintWriter out = new PrintWriter(new FileWriter(info.curtask.addPath("Fibon.res")));
+         // out.println(r);
+        //  out.close();
+     // } catch (IOException e) {e.printStackTrace(); return;}
+    
+   
     }
+    
 }
