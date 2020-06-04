@@ -23,6 +23,7 @@ public class Fib implements AM{
             //if ((r1==0)||(r2==0)) System.out.println("n="+n+" r1="+r1+" r2="+r2);
             r=r1+r2;
         }
+        r = 5;
         info.parent.write(r);
     }
 }
