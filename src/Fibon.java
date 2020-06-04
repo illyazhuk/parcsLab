@@ -27,7 +27,8 @@ public class Fibon implements AM {
       long r = c1.readLong();
       System.out.println("Result found.");
         int counter = 0;
-         boolean prime[] = new boolean[15]; 
+        n =15;
+         boolean prime[] = new boolean[n+1]; 
         for(int i=0;i<n;i++) 
             prime[i] = true; 
           
