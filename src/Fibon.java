@@ -30,7 +30,7 @@ public class Fibon implements AM {
       System.out.println("Waiting for result...");
       long r = c1.readLong();
       System.out.println("Result found.");
-
+    System.out.println("JUKKKKK");
       //System.out.println("F"+n+"="+r);
       try{
           PrintWriter out = new PrintWriter(new FileWriter(info.curtask.addPath("Fibon.res")));
