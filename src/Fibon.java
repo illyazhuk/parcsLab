@@ -27,24 +27,24 @@ public class Fibon implements AM {
       long r = c1.readLong();
       System.out.println("Result found.");
         int counter = 0;
-        n =15;
-         boolean prime[] = new boolean[n+1]; 
-        for(int i=0;i<n;i++) 
+        int m =15;
+         boolean prime[] = new boolean[m+1]; 
+        for(int i=0;i<m;i++) 
             prime[i] = true; 
           
-        for(int p = 2; p*p <=n; p++) 
+        for(int p = 2; p*p <=m; p++) 
         { 
             // If prime[p] is not changed, then it is a prime 
             if(prime[p] == true) 
             { 
                 // Update all multiples of p 
-                for(int i = p*2; i <= n; i += p) 
+                for(int i = p*2; i <= m; i += p) 
                     prime[i] = false; 
             } 
         } 
           
         // Print all prime numbers 
-        for(int i = 2; i <= n; i++) 
+        for(int i = 2; i <= m; i++) 
         { 
             if(prime[i] == true) {
                 System.out.print(i);System.out.print(", ");
