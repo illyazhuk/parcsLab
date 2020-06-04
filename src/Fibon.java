@@ -9,12 +9,7 @@ public class Fibon implements AM {
         (new Fibon()).run(new AMInfo(curtask, (channel)null));
         curtask.end();
         
-        task curtask2 = new task();
-        curtask2.addJarFile("Fibon.jar");
-        
-        int n = 30; 
-        (new Fibon()).run(new AMInfo(curtask,(channel)null));
-        curtask2.end();
+
        
     
     }
