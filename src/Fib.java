@@ -1,6 +1,7 @@
 import parcs.*;
 
-public class Fib implements AM{
+public class Fib implements AM
+{
     public void run(AMInfo info){
         long n,r1,r2,r;
         n = info.parent.readLong();
@@ -45,7 +46,6 @@ public class Fib implements AM{
                 counter++;
         } 
             
-        }
         info.parent.write(counter);
      
     }
