@@ -35,7 +35,7 @@ public class Fib implements AM{
             //if ((r1==0)||(r2==0)) System.out.println("n="+n+" r1="+r1+" r2="+r2);
             r=r1+r2;
             
-            boolean prime[] = new boolean[n+1]; 
+            boolean prime[] = new boolean[(int)n+1]; 
         for(int i=0;i<n;i++) 
             prime[i] = true; 
           
