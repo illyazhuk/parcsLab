@@ -50,6 +50,8 @@ public class Fibon implements AM {
                 counter++;}
         } 
         System.out.println();
+        System.out.print("Total entries:");
+        
     System.out.println(counter);
         
 
