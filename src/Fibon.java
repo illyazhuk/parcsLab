@@ -49,9 +49,9 @@ public class Fibon implements AM {
         // Print all prime numbers 
         for(int i = 2; i <= n; i++) 
         { 
-            if(prime[i] == true) 
+            if(prime[i] == true) {
                 System.out.print(i);System.out.print(", ");System.out.println();
-                counter++;
+                counter++;}
         } 
     System.out.println(counter);
         
