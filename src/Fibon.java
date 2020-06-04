@@ -21,7 +21,7 @@ public class Fibon implements AM {
       point p1 = info.createPoint();
       channel c1 = p1.createChannel();
       p1.execute("Fib");
-      c1.write(2);
+      c1.write(n);
 
       System.out.println("Waiting for result...");
       long r = c1.readLong();
