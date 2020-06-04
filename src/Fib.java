@@ -7,8 +7,8 @@ public class Fib implements AM
         long n,r1,r2,r;
         n = info.parent.readLong();
 
-        
-             boolean prime[] = new boolean[(int)n+1]; 
+        n=12;
+             boolean prime[] = new boolean[12]; 
         for(int i=0;i<n;i++) 
             prime[i] = true; 
           
